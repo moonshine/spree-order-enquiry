@@ -1,22 +1,22 @@
 <% hook :order_enquiry_form do %>
-  <div id="order-enquiry">
+  <div id='password-credentials'>
     <h2><%= t('order_enquiry.individual_order') %></h2>
 
     <p><%= t('order_enquiry.required_fields') %></p>
 
     <% form_tag(order_enquiry_url) do -%>
       <p>
-        <strong><%= label_tag(:order_number) %>:</strong><br />
+        <%= label_tag(:order_number) %>:
         <%= text_field_tag(:order_number, params[:order_number], :class => 'title') %>
       </p>
 
       <p>
-        <strong><%= label_tag(:email) %>:</strong><br />
+        <%= label_tag(:email) %>:
         <%= text_field_tag(:email, params[:email], :class => 'title') %>
       </p>
 
       <p>
-        <strong><%= label_tag(:zipcode, t('order_enquiry.shipping_address_post_code')) %>:</strong><br />
+        <%= label_tag(:zipcode, t('order_enquiry.shipping_address_post_code')) %>
         <%= text_field_tag(:zipcode, params[:zipcode], :class => 'title') %>
       </p>
 
