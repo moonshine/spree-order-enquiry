@@ -1,0 +1,15 @@
+<% if Spree::Config[:allow_guest_checkout] %>
+
+  <% hook :order_enquiry do %>
+    <div id="order-enquiry">
+      <h1><%= t('order_enquiry.order_enquiry') %></h1>
+
+      <h2><%= t("login_as_existing") %></h2>
+      <p><%= t('order_enquiry.complete_history') %></p>
+      <%= render :partial => 'shared/login' %>
+
+      <%= render :partial => 'shared/order_enquiry_form' %>
+
+  <% end -%>
+
+<% end -%>

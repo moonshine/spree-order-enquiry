@@ -1,0 +1,13 @@
+---
+en:
+  order_enquiry:
+    order_not_found: "Sorry but we could not find the specified order."
+    find_order: "Find your order"
+    order_enquiry: "Order Status"
+    individual_order: "Individual Order"
+    required_fields: "Enter order number, email and shipping address post code."
+    complete_history: "Login to see your complete order history."
+    shipping_address_post_code: "Shipping Post Code"
+    order_enquiry_email_sent: "The order details have been emailed to you."
+    email_subject: "Details for Order #{{order}}"
+    status: "Order Status"

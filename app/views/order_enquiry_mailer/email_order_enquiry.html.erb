@@ -1,0 +1,10 @@
+<h1><%= t("order_enquiry.email_subject", :order => @order.number) -%></h1>
+<h4><%= t('order_enquiry.status') %></h4>
+<p<%= t(@order.state) %></p>
+
+<% if @order.ship_address %>
+  <h4><%= t("ship_address") %></h4>
+  Address details....
+ <% end %>
+<hr />
+order details ....
